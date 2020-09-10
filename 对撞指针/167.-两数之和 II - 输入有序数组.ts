@@ -23,7 +23,7 @@ function twoSum(numbers: number[], target: number): number[] {
 function twoSum2(numbers: number[], target: number): number[] {
   let i = 0
   let j = numbers.length - 1
-  for (let k = 0; k < numbers.length; k++) {
+  while(i < j) {
     if (numbers[i] + numbers[j] === target) {
       return [i + 1, j + 1]
     } else if (numbers[i] + numbers[j] > target) {
